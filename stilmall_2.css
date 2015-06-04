@@ -100,9 +100,10 @@ table.gridtableForMove {
 	font-family: verdana,arial,sans-serif;
 	font-size:11px;
 	color:#333;
-	border-width: 1px;
-	border-color: #555;
 	border-collapse: collapse;
+	border-radius: 3px;
+	border:0;
+	margin:0;
 }
 
 table.gridtableForMove th {
@@ -111,6 +112,9 @@ table.gridtableForMove th {
 	border-style: solid;
 	border-color: #555;
 	background-color: #AAA;
+	border-radius: 3px;
+	border:0;
+	margin:0;
 }
 table.gridtableForMove td {
 	border-width: 1px;
@@ -118,30 +122,35 @@ table.gridtableForMove td {
 	border-style: solid;
 	border-color: #555;
 	background-color: #CCC;
+
+	border:0;
+	margin:0;
 }
 
 
 table.gridtableForMoveTitle {
 	font-family: verdana,arial,sans-serif;
+	border-collapse: collapse;
 	font-size:11px;
 	color:#333;
-	border-width: 1px;
-	border-color: #555;
-	border-collapse: collapse;
+	border-radius: 3px;
+	border:0;
+	margin:0;
 }
 table.gridtableForMoveTitle th {
 	border-width: 1px;
 	padding: 8px;
-	border-style: solid;
-	border-color: #555;
 	background-color: #444;
+	border-radius: 3px;
+	border:0;
+	margin:0;
 }
 table.gridtableForMoveTitle td {
 	border-width: 1px;
 	padding: 8px;
-	border-style: solid;
-	border-color: #555;
 	background-color: #444;
+	border:0;
+	margin:0;
 }
 
 table.gridtable {
@@ -151,8 +160,10 @@ table.gridtable {
 	border-width: 0px;
 	border-color: #555;
 	border-collapse: collapse;
-	
 	word-break:break-all;
+	border-radius: 3px;
+	border:0;
+	margin:0;
 }
 table.gridtable th {
 	border-width: 1px;
@@ -160,6 +171,9 @@ table.gridtable th {
 	border-style: solid;
 	border-color: #555;
 	background-color: #AAA;
+	border-radius: 3px;
+	border:0;
+	margin:0;
 }
 table.gridtable td {
 	border-width: 0px;
@@ -167,6 +181,7 @@ table.gridtable td {
 	border-style: solid;
 	border-color: #555;
 	background-color: #CCC;
+
 }
 
 
@@ -177,6 +192,9 @@ table.gridtableTitle {
 	border-width: 1px;
 	border-color: #555;
 	border-collapse: collapse;
+ 	border-radius: 3px;
+	border:0;
+	margin:0;
 }
 table.gridtableTitle th {
 	border-width: 1px;
@@ -184,6 +202,9 @@ table.gridtableTitle th {
 	border-style: solid;
 	border-color: #555;
 	background-color: #444;
+	border-radius: 3px;
+	border:0;
+	margin:0;
 }
 table.gridtableTitle td {
 	border-width: 1px;
@@ -191,6 +212,10 @@ table.gridtableTitle td {
 	border-style: solid;
 	border-color: #555;
 	background-color: #444;
+	border-radius: 3px;
+	border:0;
+	margin:0;
+	
 	
 }
 
@@ -206,6 +231,8 @@ table.gridtableTitle td {
     z-index: 100;
     height:300px;
 	margin-left: -30px;
+	border-radius: 3px;
+
 	
 }
 
@@ -215,6 +242,9 @@ table.gridtableTitle td {
     z-index: 9999;
 	background-color: #999;
 	width: 60%;
+	border-radius: 3px;
+	border:0;
+	margin:0;
 	/*
 	border-bottom-width: 3px;
     border-bottom-color: #555555;
@@ -222,15 +252,15 @@ table.gridtableTitle td {
 	*/ 
 }
 
-#BoxForText{
-	margin-left: -10px;
-	margin-top: -20px;
+#BoxForText{	
+	
     z-index: 9999;
 	background-color: #999;
-	width: 60%;
-	border-width:1px;
-    border-color: #555555;
-    border-style: solid;
+	width: 60%;  
+    margin-top: -20px;
+	padding: 10px 1px;
+	border-radius: 3px;
+
 }
 
 .Footer_Index{
@@ -265,13 +295,21 @@ p{
 }
 
 .boxed {
-  border: 1px solid #555 ;
+  padding: 2px 16px;
+  display: inline-block;
+  text-decoration:none;
+  border-radius: 3px;
   background-color: #ECECEC;
+  border:0;
+  margin:0;
 }
 
 .boxed_disable {
   border: 1px solid #555 ;
   background-color: #CCC;
+  border-radius: 3px;
+  border:0;
+  margin:0;
 }
 
 .NSFW {
@@ -284,6 +322,23 @@ p{
   color: #93C763;
 }
 
+input[type=text],input[type=URL],input[type=Email], textarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+ 
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #DDDDDD;
+}
+ 
+input[type=text]:focus,input[type=URL]:focus,input[type=Email]:focus, textarea:focus {
+  box-shadow: 0 0 5px rgba(200, 0, 200, 1);
+ 
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(200, 0, 200, 1);
+}
 
 h1{
  color: #EEE;
